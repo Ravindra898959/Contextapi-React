@@ -51,7 +51,7 @@ const App = () => {
 
   return (
     <>
-      <NewContext.Provider value={{ password1, setPassword1 }}>
+      <NewContext.Provider value={{ password1, data }}>
         <Child1 />
         <Child2 />
       </NewContext.Provider>
@@ -91,6 +91,8 @@ const App = () => {
           </button>
         </form>
         <button onClick={removeItem}>Clear Storage</button>
+        <h1>{count} This is h1</h1>
+        <button onClick={increment}>Add</button>
       </div>
     </>
   );
